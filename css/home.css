@@ -1,0 +1,81 @@
+.header-bg {
+  background-color: #fec63e;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-lista {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-lista li {
+  margin-left: 25px;
+}
+
+.header-lista li a {
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.introducao-bg {
+  background: url(/img/bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.introducao {
+  text-align: center;
+  padding: 80px;
+  width: 100%;
+  margin-top: 92px;
+}
+
+.introducao h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.quote-intro {
+  max-width: 320px;
+  margin: 0 auto 40px auto;
+}
+
+.quote-intro p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.quote-intro p::after,
+.quote-intro p::before {
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: white;
+  display: block;
+  margin: 14px auto 10px auto;
+}
+
+.quote-intro cite {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
