@@ -15,16 +15,16 @@
   padding-bottom: 15px;
 }
 
-.header-lista {
+.header-menu {
   display: flex;
   flex-wrap: wrap;
 }
 
-.header-lista li {
+.header-menu li {
   margin-left: 25px;
 }
 
-.header-lista li a {
+.header-menu li a {
   padding: 15px 0;
   display: inline-block;
   font-size: 14px;
@@ -34,16 +34,45 @@
   color: black;
 }
 
+.header-menu li a:hover {
+  color: white;
+  transition: .3s;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-bg {
+    position: relative;
+  }
+  .header {
+    flex-direction: column;
+    gap: 20px;
+   }
+
+  .header-menu {
+    justify-content: center;
+  }
+  .header-menu li {
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+  .header-menu li a{
+    border: 3px solid black;
+    width: 120px;
+    text-align: center;
+  }
+}
+
+/* introducao */
+
 .introducao-bg {
   background: url(/img/bg.jpg) no-repeat center;
   background-size: cover;
-  height: 100%;
 }
 
 .introducao {
   text-align: center;
-  padding: 80px;
   width: 100%;
+  height: 380px;
   margin-top: 92px;
 }
 
@@ -51,6 +80,7 @@
   font-size: 48px;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 80px;
 }
 
 .quote-intro {
@@ -67,7 +97,7 @@
 .quote-intro p::before {
   content: '';
   width: 80px;
-  height: 5px;
+  height: 3px;
   background: white;
   display: block;
   margin: 14px auto 10px auto;
@@ -78,10 +108,26 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .1em;
+  font-size: 14px;
 }
 
+@media only screen and (max-width: 767px) {
+  .introducao {
+    margin-top: 0px;
+    height: 350px;
+  }
+  .introducao h1 {
+    padding-top: 40px;
+    font-size: 32px;
+    margin-top: 0px;
+  }
+}
+
+/* produtos */
+
 .produtos {
-  padding: 80px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -129,12 +175,27 @@
 }
 .call {
   text-align: center;
+  margin-top: 20px;
 }
 .call p {
   font-size: 14px;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
+
+@media only screen and (max-width: 767px) {
+  .produtos-lista {
+    margin: 10px auto;
+    width: 300px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .produtos-item {
+    margin-bottom: 0px;
+  }
+}
+
+/* Portfólio */
 
 .portfolio{
   background: black;
@@ -150,19 +211,26 @@
 }
 
 .portfolio-img {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+ flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 40px;
 }
 
-.portfolio-img div:last-child {
-  grid-column: -3 / -1;
+.portfolio-img img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.portfolio-img img:last-child {
+  min-width: 100%;
 }
 
 .portfolio .call p {
   color: white;
 }
+
+/* qualidade */
 
 .qualidade {
   padding-top: 60px;
@@ -170,25 +238,27 @@
 }
 
 .qualidade-img {
-  display: grid;
-  grid-template-columns:1fr;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 
 .qualidade-lista {
   display: flex;
   color: black;
-  margin-top: 0px;
   margin-bottom: 40px;
-  gap: 40px; 
   justify-content: center;
+  padding: 0px 20px;
 }
 
 .qualidade-lista li {
   text-align: center;
   margin-top: 20px;
-  min-width: 20ch;
+  padding: 0 20px;
+}
+
+.qualidade-lista li:nth-child(2) {
+  min-width: 30ch ;
 }
 
 .qualidade .call {
@@ -209,12 +279,33 @@
   margin: 6px auto;
 }
 
+@media only screen and (max-width: 767px) {
+  .qualidade-lista {
+    flex-direction: column;
+  }
+  .qualidade-lista::before {
+    content: '';
+    width: 250px;
+    height: 150px;
+    display: block;
+    background: url(/img/bikcraft-qualidade.svg) no-repeat center;
+    margin: 0 auto;
+  }
+  .qualidade-img img {
+    display: none;
+  }
+  .qualidade-lista li:nth-child(2) {
+    min-width: inherit;
+  }
+}
+
+/* FRASE QUOTE */
+
 .frase {
   background: url(/img/bg-footer.jpg) no-repeat center;
   text-align: center;
   background-size:cover ;
   height: 220px;
-  
 }
 
 .frase blockquote {
@@ -244,6 +335,8 @@
   font-size: 14px;
 }
 
+/* footer */
+
 .footer-bg {
   background: black;
 }
@@ -255,7 +348,6 @@
   grid-template-columns: 5fr 3fr 3fr;
   gap: 20px;
 }
-
 
 .footer-item h3 {
   color: #fec63e;
@@ -284,7 +376,6 @@
 
 .footer-redes {
   display: flex;
- 
 }
 
 .footer-redes li {
@@ -294,7 +385,25 @@
   cursor: pointer;
 }
 
+.footer-redes li:hover {
+  border: 3px solid white;
+  transition: .3s;
+}
+
 .copy {
   background: #fec63e;
   padding: 20px 0;
+  color: black;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    justify-items: start;
+    max-width: 300px;
+    grid-template-columns: 1fr;
+  }
+  .copy {
+    text-align: center;
+  }
 }

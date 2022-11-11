@@ -53,6 +53,19 @@ p {
   border: 4px solid #fec63f;
   padding: 10px 30px;
   display: inline-block;
+  font-size: 14px;
+}
+
+.btn:hover {
+  color: white;
+  border: 4px solid white;
+  transition: .3s
+}
+
+.btn-preto:hover {
+  color: black;
+  border: 4px solid black;
+  transition: .3s;
 }
 
 .subtitulo {
