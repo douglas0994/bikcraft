@@ -163,3 +163,138 @@
 .portfolio .call p {
   color: white;
 }
+
+.qualidade {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.qualidade-img {
+  display: grid;
+  grid-template-columns:1fr;
+  justify-items: center;
+}
+
+
+.qualidade-lista {
+  display: flex;
+  color: black;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  gap: 40px; 
+  justify-content: center;
+}
+
+.qualidade-lista li {
+  text-align: center;
+  margin-top: 20px;
+  min-width: 20ch;
+}
+
+.qualidade .call {
+  margin-top: 60px;
+}
+
+.qualidade-lista li h3 {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.qualidade-lista li h3::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: black;
+  display: block;
+  margin: 6px auto;
+}
+
+.frase {
+  background: url(/img/bg-footer.jpg) no-repeat center;
+  text-align: center;
+  background-size:cover ;
+  height: 220px;
+  
+}
+
+.frase blockquote {
+  max-width: 55ch;
+  padding: 40px 0;
+}
+
+.frase blockquote p {
+  font-style: italic;
+}
+
+.frase blockquote p::after,
+.frase blockquote p::before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  margin: 14px auto;
+  display: block;
+}
+
+.frase blockquote cite {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: .2em;
+  font-size: 14px;
+}
+
+.footer-bg {
+  background: black;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 5fr 3fr 3fr;
+  gap: 20px;
+}
+
+
+.footer-item h3 {
+  color: #fec63e;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: .1em;
+  max-width: max-content;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-item h3::after {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 3px;
+  background: #fec63e;
+  margin: 6px 0 12px 0;
+}
+
+.footer-item ul li {
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 20px;
+}
+
+.footer-redes {
+  display: flex;
+ 
+}
+
+.footer-redes li {
+  margin-right: 20px;
+  border: 3px solid #fec63e;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.copy {
+  background: #fec63e;
+  padding: 20px 0;
+}
