@@ -1,0 +1,63 @@
+.produtos-interno {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+.produtos {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.produtos-passeio{
+  background: url(/img/produtos/bikcraft-passeio-1.jpg);
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produtos h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1;
+  font-size: 36px;
+}
+
+.produtos h2::after,
+.produtos h2::before {
+  content: '';
+  width: 60px;
+  height: 2px;
+  background: white;
+  display: block;
+  margin: 6px auto;
+}
+
+
+.produtos-logo {
+  background: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.produtos-esporte{
+  background: url(/img/produtos/bikcraft-esporte-1.jpg);
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produtos-retro{
+  background: url(/img/produtos/bikcraft-retro-1.jpg);
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
