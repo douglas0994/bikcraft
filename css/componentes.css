@@ -1,3 +1,4 @@
+/* RESET CSS */
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +31,8 @@ img {
   height: auto;
   display: block;
 }
+
+/* container */
 
 .container {
   box-sizing: border-box;
