@@ -1,4 +1,3 @@
-
 .introducao-bg {
   background: url(/img/bg.jpg) no-repeat center;
   background-size: cover;
@@ -44,18 +43,6 @@
   text-transform: uppercase;
   letter-spacing: .1em;
   font-size: 14px;
-}
-
-@media only screen and (max-width: 767px) {
-  .introducao {
-    margin-top: 0px;
-    height: 350px;
-  }
-  .introducao h1 {
-    padding-top: 40px;
-    font-size: 32px;
-    margin-top: 0px;
-  }
 }
 
 /* produtos */
@@ -118,17 +105,6 @@
   margin-bottom: 12px;
 }
 
-@media only screen and (max-width: 767px) {
-  .produtos-lista {
-    margin: 10px auto;
-    width: 300px;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .produtos-item {
-    margin-bottom: 0px;
-  }
-}
 
 /* Portfólio */
 
@@ -214,26 +190,6 @@
   margin: 6px auto;
 }
 
-@media only screen and (max-width: 767px) {
-  .qualidade-lista {
-    flex-direction: column;
-  }
-  .qualidade-lista::before {
-    content: '';
-    width: 250px;
-    height: 150px;
-    display: block;
-    background: url(/img/bikcraft-qualidade.svg) no-repeat center;
-    margin: 0 auto;
-  }
-  .qualidade-img img {
-    display: none;
-  }
-  .qualidade-lista li:nth-child(2) {
-    min-width: inherit;
-  }
-}
-
 /* FRASE QUOTE */
 
 .frase {
@@ -270,75 +226,43 @@
   font-size: 14px;
 }
 
-/* footer */
 
-.footer-bg {
-  background: black;
-}
-
-.footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: 5fr 3fr 3fr;
-  gap: 20px;
-}
-
-.footer-item h3 {
-  color: #fec63e;
-  text-transform: uppercase;
-  font-family: 'Times New Roman', Times, serif;
-  letter-spacing: .1em;
-  max-width: max-content;
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-.footer-item h3::after {
-  content: '';
-  width: 100%;
-  display: block;
-  height: 3px;
-  background: #fec63e;
-  margin: 6px 0 12px 0;
-}
-
-.footer-item ul li {
-  font-size: 14px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  line-height: 20px;
-}
-
-.footer-redes {
-  display: flex;
-}
-
-.footer-redes li {
-  margin-right: 20px;
-  border: 3px solid #fec63e;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.footer-redes li:hover {
-  border: 3px solid white;
-  transition: .3s;
-}
-
-.copy {
-  background: #fec63e;
-  padding: 20px 0;
-  color: black;
-}
-
+/* RESPONSIVO */
 
 @media only screen and (max-width: 767px) {
-  .footer {
-    justify-items: start;
+  .introducao {
+    margin-top: 0px;
+    height: 350px;
+  }
+  .introducao h1 {
+    padding-top: 40px;
+    font-size: 32px;
+    margin-top: 0px;
+  }
+  .produtos-lista {
+    margin: 10px auto;
     max-width: 300px;
     grid-template-columns: 1fr;
+    justify-items: center;
   }
-  .copy {
-    text-align: center;
+  .produtos-item {
+    margin-bottom: 0px;
+  }
+  .qualidade-lista {
+    flex-direction: column;
+  }
+  .qualidade-lista::before {
+    content: '';
+    width: 250px;
+    height: 150px;
+    display: block;
+    background: url(/img/bikcraft-qualidade.svg) no-repeat center;
+    margin: 0 auto;
+  }
+  .qualidade-img img {
+    display: none;
+  }
+  .qualidade-lista li:nth-child(2) {
+    min-width: inherit;
   }
 }

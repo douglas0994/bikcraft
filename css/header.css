@@ -44,20 +44,30 @@
     position: relative;
   }
   .header {
-    flex-direction: column;
+    margin: 0 auto;
     gap: 20px;
-   }
-
-  .header-menu {
     justify-content: center;
+   }
+  .header-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
   .header-menu li {
     margin-left: 6px;
     margin-top: 6px;
   }
+
   .header-menu li a{
-    border: 3px solid black;
-    width: 120px;
+    font-size: 14px;
+    padding: 12px 8px;
+    border: 4px solid black;
     text-align: center;
+    min-width: 200px;
+   
+  }
+  .header-menu li a:hover {
+    border: 4px solid white;
   }
 }
