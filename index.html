@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <header class="header-bg">
@@ -24,10 +25,9 @@
       </nav>
     </div>
   </header>
-
   <main class="introducao-bg">
     <div class="introducao container">
-      <h1>Bicicletas Feitas a Mão</h1>
+      <h1 data-anime="500" data-anime="500" class="fadeInDown">Bicicletas Feitas a Mão</h1>
       <blockquote class="quote-intro">
         <p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
         <cite>WILLIAM MORRIS</cite>
@@ -35,7 +35,6 @@
       <a class="btn" href="orcamento.html">Orçamento</a>
     </div>
   </main>
-
   <article class="produtos-home container">
     <h2 class="subtitulo">Produtos</h2>
     <ul class="produtos-lista">
@@ -66,21 +65,25 @@
       <a class="btn btn-preto" href="produtos.html">Produtos</a>
     </div>
   </article>
-
   <article class="portfolio">
-    <div class="container">
-      <h2 class="subtitulo">Portfólio</h2>
-        <ul class="portfolio-img">
-            <li><img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
-            <li><img src="./img/portfolio/retro.jpg" alt="bicicleta retro"></li>
-            <li><img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
-        </div>
+    <h2 class="subtitulo">Portfólio</h2>
+    <div class="container" data-slide="portfolio">
+      <ul class="portfolio-img">
+        <li><img src="./img/portfolio/retro.jpg" alt="bicicleta retro"></li>
+        <li><img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+        <li><img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
+      </ul>
+      <ul class="portfolio-img">
+        <li><img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+        <li><img src="./img/portfolio/retro.jpg" alt="bicicleta retro"></li>
+        <li><img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
+      </ul>
+    </div>
     <div class="call">
       <p>conheça mais nosso portfolio</p>
       <a class="btn" href="portfolio.html">Produtos</a>
     </div>
   </article>
-
   <section class="container qualidade">
     <h2 class="subtitulo">Qualidade</h2>
     <div class="qualidade-img">
@@ -105,14 +108,12 @@
       <a class="btn btn-preto" href="sobre.html">Sobre</a>
     </div>
   </section>
-
   <section class="frase">
     <blockquote class="container">
       <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
       <cite>WILLIAM MORRIS</cite>
     </blockquote>
   </section>
-
   <footer>
     <div class="footer-bg">
       <div class="container footer ">
@@ -138,10 +139,14 @@
         </div>
       </div>
     </div>
-
-      <div class="copy">
-        <p class="container">Bikcraft 2019 - Alguns direitos reservados.</p>
-      </div>
+    <div class="copy">
+      <p class="container">Bikcraft 2019 - Alguns direitos reservados.</p>
+    </div>
   </footer>
+
+  <script src="./js/simple-anime.js"></script>;
+  <script src="./js/simple-slide.js"></script>;
+  <script src="./js/script.js"></script>;
+
 </body>
 </html>

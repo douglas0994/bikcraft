@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <header class="header-bg">
@@ -30,23 +31,34 @@
       <p>conheça os projetos que amamos mostrar</p>
   </main>   
 
-  <article class="container">
+  <article class="container" data-slide="quote">
     <blockquote class="quote-clientes">
-      <p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.”</p>
+      <p>“Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.”</p>
       <cite>Barbara Moss</cite>
     </blockquote>
+    <blockquote class="quote-clientes">
+      <p>“Uma dos maiores Doms que o ser humano tem é poder andar livremente onde bem quiser, e em conjunto com a Bikcraft isso pode te trazer resultados ainda mais incriveis.”</p>
+      <cite>Leonel Zidane Messi</cite>
+    </blockquote>
+    <blockquote class="quote-clientes">
+      <p>“Sempre utilizei a marca e graças a ela me inspirei em ser o melhor, aqui em casa todos usam e aprovam, a cada ano sempre vem coisa boa, tive sorte em escolher a marca."</p>
+      <cite>Ronaldo Cristiano</cite>
+    </blockquote>
   </article>
-
   <article class="portfolio">
-    <div class="container">
-        <ul class="portfolio-img">
-            <li><img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
-            <li><img src="./img/portfolio/retro.jpg" alt="bicicleta retro"></li>
-            <li><img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
-        </div>
+    <div class="container" data-slide="portfolio">
+      <ul class="portfolio-img">
+          <li><img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+          <li><img src="./img/portfolio/retro.jpg" alt="bicicleta retro"></li>
+          <li><img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
+      </ul>
+      <ul class="portfolio-img">
+        <li><img src="./img/portfolio/retro.jpg" alt="bicicleta retro"></li>
+        <li><img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+        <li><img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte"></li>
+      </ul>
+    </div>
   </article>
-  
- 
   <section class="frase">
     <blockquote class="container">
       <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
@@ -79,9 +91,12 @@
       </div>
     </div>
 
-      <div class="copy">
-        <p class="container">Bikcraft 2019 - Alguns direitos reservados.</p>
-      </div>
+    <div class="copy">
+      <p class="container">Bikcraft 2019 - Alguns direitos reservados.</p>
+    </div>
   </footer>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-slide.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

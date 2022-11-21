@@ -111,6 +111,7 @@
 .portfolio{
   background: black;
   padding: 40px;
+  position: relative;
 }
 
 .portfolio h2 {
