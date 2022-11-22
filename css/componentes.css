@@ -93,7 +93,8 @@ p {
 
 /* FORMULÁRIOS DAS PAGINAS DE PRODUTOS E CONTATO */
 .form {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin-top: 40px;
 }
 
@@ -113,7 +114,7 @@ p {
   padding: 7px 10px;
   margin: 8px 0 8px 0;
   border-radius: 2px;
-  width: 400px;
+  
   color: white;
   font-size: 14px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -126,7 +127,7 @@ p {
   padding: 7px 10px;
   margin: 8px 0;
   border-radius: 2px;
-  width: 400px;
+
   color: white;
   font-size: 14px;
   font-family: Georgia, 'Times New Roman', Times, serif;

@@ -202,9 +202,13 @@
     .produtos-info{
       grid-column: inherit;
     }
+    .orcamento-bg {
+      margin-top: 40px;
+      padding: 20px;
+    }
     .orcamento {
       grid-template-columns: 1fr;
-      justify-items: center ;
+      gap: 20px;
     }
     .orcamento-dados{
       display: grid;
