@@ -112,7 +112,7 @@
 
 .orcamento-bg {
   background: black;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .orcamento {
@@ -204,7 +204,6 @@
     }
     .orcamento-bg {
       margin-top: 40px;
-      padding: 20px;
     }
     .orcamento {
       grid-template-columns: 1fr;
@@ -213,12 +212,20 @@
     .orcamento-dados{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 10px;
     }
+    .orcamento-dados ul li,
+    .orcamento-dados span,
+    .orcamento-dados h3{
+      font-size: 14px;
+    }
+  
     .orcamento-dados p {
       grid-column: 2/3;
     }
     .orcamento-dados ul {
       grid-column: 2/3;
+      font-size: 12px;
     }
 }
 
